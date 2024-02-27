@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import icon from './icon.png';
 
 function Navbar() {
@@ -11,16 +12,16 @@ function Navbar() {
     return (
         <nav className="flex items-center justify-between w-full h-20 px-6 bg-gradient-to-r from-blue-500 to-slate-700">
             <div className="flex items-center">
-                <a href="/" className="flex items-center">
+                <Link to="/" className="flex items-center">
                     <img className="w-10 h-10 mr-4" src={icon} alt="Health Card Icon" />
                     <h1 className="text-2xl font-bold text-white">Health Card</h1>
-                </a>
+                </Link>
             </div>
             <div className="hidden md:flex items-center space-x-4">
-                <a href="#home" className="text-white hover:text-gray-300">Home</a>
-                <a href="#about" className="text-white hover:text-gray-300">About</a>
-                <a href="#services" className="text-white hover:text-gray-300">Services</a>
-                <a href="#contact" className="text-white hover:text-gray-300">Contact</a>
+                <Link to="/" className="text-white hover:text-gray-300">Home</Link>
+                <Link to="/about" className="text-white hover:text-gray-300">About</Link>
+                <Link to="/services" className="text-white hover:text-gray-300">Services</Link>
+                <Link to="/contact" className="text-white hover:text-gray-300">Contact</Link>
             </div>
             <button
                 className="md:hidden text-white"
@@ -40,10 +41,10 @@ function Navbar() {
             </button>
             {isOpen && (
                 <div id="mobile-menu" className="md:hidden flex flex-col mt-2 space-y-2">
-                    <a href="#home" className="text-white hover:text-gray-300">Home</a>
-                    <a href="#about" className="text-white hover:text-gray-300">About</a>
-                    <a href="#services" className="text-white hover:text-gray-300">Services</a>
-                    <a href="#contact" className="text-white hover:text-gray-300">Contact</a>
+                    <Link to="/" className="text-white hover:text-gray-300">Home</Link>
+                    <Link to="/about" className="text-white hover:text-gray-300">About</Link>
+                    <Link to="/services" className="text-white hover:text-gray-300">Services</Link>
+                    <Link to="/contact" className="text-white hover:text-gray-300">Contact</Link>
                 </div>
             )}
         </nav>
@@ -51,4 +52,3 @@ function Navbar() {
 }
 
 export default Navbar;
-

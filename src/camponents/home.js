@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from "./Navbar";
 import healthImage from './healthImage.jpg'; // Replace 'health_image.jpg' with the path to your image
 
 function Home() {
@@ -23,7 +22,7 @@ function Home() {
         <div className="container mx-auto bg-gradient-to-r from-indigo-200 blue-200 to-sky-200">
             {/* Image Section */}
             <section className="mb-8">
-                <img src={healthImage} alt="Health Image" className="rounded-lg shadow-lg w-full" />
+                  <img src={healthImage} alt="Health Card" className="rounded-lg shadow-lg w-full" />
             </section>
 
             {/* Information Section */}
