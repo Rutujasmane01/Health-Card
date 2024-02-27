@@ -31,7 +31,7 @@ function Home() {
                 <h2 className="text-4xl font-bold text-gray-800 mb-4 font-serif text-sky-800">Welcome to Health Card</h2>
                 <p className="text-lg  text-gray-600 mb-8 text-Fuchsia-500">Your personalized health information platform</p>
                 <p className="text-gray-700 mb-8 text-balance text-Fuchsia-500">
-                    Health Card is your one-stop solution for managing your health information securely and conveniently. With our platform, you can access your medical records anytime, anywhere, ensuring that your important health data is always at your fingertips. Our user-friendly interface makes it easy to track your medical history, appointments, prescriptions, and more.
+                    Health Card is our one-stop solution for managing your health information securely and conveniently. With our platform, you can access your medical records anytime, anywhere, ensuring that your important health data is always at your fingertips. Our user-friendly interface makes it easy to track your medical history, appointments, prescriptions, and more.
                 </p>
             </section>
 
